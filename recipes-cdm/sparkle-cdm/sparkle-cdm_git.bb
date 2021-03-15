@@ -15,13 +15,6 @@ SRCREV = "9bf7407ba830efb985fe4389444f53253a355480"
 
 S = "${WORKDIR}/git"
 
-BBCLASSEXTEND = "devupstream:target"
-LIC_FILES_CHKSUM-devupstream = "file://COPYING;md5=5d34cbc44b66f4a9ddc9afa73e13eda5"
-SRC_URI_class-devupstream = "git://github.com/Sparkle-CDM/sparkle-cdm.git;protocol=https;branch=main"
-SRCREV_class-devupstream = "9bf7407ba830efb985fe4389444f53253a355480"
-PV_class-devupstream = "2021.0+git${SRCPV}"
-S_class-devupstream = "${WORKDIR}/git"
-
 PROVIDES += "virtual/open-cdm"
 RPROVIDES_${PN} += "virtual/open-cdm"
 
