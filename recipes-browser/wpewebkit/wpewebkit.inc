@@ -16,7 +16,7 @@ inherit cmake pkgconfig perlnative python3native ${@bb.utils.contains('PACKAGECO
 
 BBCLASSEXTEND = "native"
 
-CCACHE_DISABLE[unexport] = "1"
+export WK_USE_CCACHE="NO"
 
 PACKAGECONFIG ??= "fetchapi indexeddb mediasource video webaudio webcrypto woff2 gst_gl remote-inspector openjpeg unified-builds service-worker \
                    ${@bb.utils.contains('DISTRO_FEATURES', 'systemd', 'systemd', '' ,d)} \
